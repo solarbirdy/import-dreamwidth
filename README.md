@@ -5,16 +5,16 @@ I did a lot of searching trying to figure out how to get my Dreamwidth blog entr
 
 Until now.
 
-It's not a good importer; I wrote it well enough to be used successfully by me, once. Then it turned out more people wanted to do this and asked me to share my code. So I made it _very slightly_ less terrible, fixed a few bugs, ripped out a bunch of unnecessary code, and here we go.
+It's not a good importer; I wrote it well enough to be used successfully by me, once. Then it turned out more people wanted to do this and asked me to share my code. So I made it _very slightly_ less terrible, fixed a few bugs, ripped out a bunch of unnecessary code, de-hardcoded some paths, and here we go. Basically I did just enough that it has a shot of working for you if you know what you're doing and have your own standalone Wordpress install.
 
-Don't worry; it's still terrible. No warranty express or etc. Run it on a test blog installation first to make sure it doesn't explode. Then run it on your real blog once you know it's safe.
+In short, don't worry: it's still terrible. No warranty express or etc. Run it on a test blog installation first to make sure it doesn't explode. Then run it on your real blog once you know it's safe.
 
 
 FEATURES:
 
 Brings in posts, _and_ comments, _and_ maintains comment threads, _and_ commenter names IF AND ONLY IF the comments actually originated on Dreamwidth. (Livejournal-originated comment poster names are not preserved; I can't get to them either.)
 
-Preserves Current Music but _not_ Current mood.
+Preserves Current Music (but _not_ Current Mood).
 
 Preserves Dreamwidth tags, adding them as Wordpress tags. Posts without tags are tagged "no-tag."
 
@@ -31,13 +31,13 @@ oh god so many
 
 The Dreamwidth user tag is not well preserved. Neither is the Livejournal user tag, so LJ names may disappear from text.
 
-Current mood: is not preserved.
+Current Mood is not preserved.
 
 You have to marshal a lot more resources depending upon how big your exported journal is. See below for details.
 
 Various friends groups are all condensed into a single "password protected" mode, due to reasons.
 
-It's not real fast.
+It's not what you'd call real fast.
 
 
 STUFF YOU NEED TO DO AND RESOURCES YOU NEED TO ALLOCATE:

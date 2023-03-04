@@ -7,7 +7,7 @@ Until now.
 
 It's not a good importer; I wrote it well enough to be used successfully by me, once. Then it turned out more people wanted to do this and asked me to share my code. So I made it _somewhat_ less terrible and here we go.
 
-Don't worry; it's still terrible.
+Don't worry; it's still terrible. No warranty express or etc. Run it on a test blog installation first to make sure it doesn't explode. Then run it on your real blog once you know it's safe.
 
 STUFF YOU NEED TO DO AND RESOURCES YOU NEED TO ALLOCATE:
 
@@ -35,7 +35,7 @@ Using mysql console for MariaDB, increase maximum allowed packet size (default i
 
 SET GLOBAL max_allowed_packet=1073741824;
 
-THIRD -- Install the import tool. The default Wordpress install provides a Livejournal importer, accessible from the Tools/Import menu. Back up the livejournal-importer.php file and overwrite it that with this nonsense. Make sure to keep the same permissions.
+THIRD -- Install the import tool. The default Wordpress install provides a Livejournal importer, accessible from the Tools/Import menu. It lives in wp-content/plugins/livejournal-importer and is named livejournal-importer.php. Make a backup copy of the livejournal-importer.php file, and then replace the original with the livejournal.importer.php from this project. Make sure to keep the same permissions on the file!
 
 FOURTH -- Take the XML backup you made in Step 1 and place it into the same livejournal-importer directory. Name it "importme.xml" and give it the same permissions as the other files already in the directory.
 

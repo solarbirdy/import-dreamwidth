@@ -22,12 +22,14 @@ Imported posts can be automatically categorised either as "imported post" or "Un
 
 Post formatting is preserved.
 
-Link to original post is preserved in new-post metadata
+Link back to the original post on Dreamwidth is preserved in the new posts' metadata.
 
 
 **ISSUES:**
 
 oh god so many
+
+It absolutely assumes linux. Debian in my case. Don't ask for Windows help, I don't have it.
 
 The Dreamwidth user tag is not well preserved. Neither is the Livejournal user tag, so LJ names may disappear from text.
 
@@ -37,7 +39,7 @@ You have to marshal a lot more resources depending upon how big your exported jo
 
 Various friends groups are all condensed into a single "password protected" mode, due to reasons.
 
-It's not what you'd call real fast.
+It's not what you'd call... fast.
 
 
 **STUFF YOU NEED TO DO AND RESOURCES YOU NEED TO ALLOCATE:**

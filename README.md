@@ -1,5 +1,5 @@
 # import-dreamwidth
-This is a tool for importing Dreamwidth journal XML backups into WordPress
+This is a tool for importing Dreamwidth journal XML backups into WordPress.
 
 I did a lot of searching trying to figure out how to get my Dreamwidth blog entries and their comments brought over into my new WordPress install, and from what I could find, nobody's managed it.
 
@@ -8,6 +8,37 @@ Until now.
 It's not a good importer; I wrote it well enough to be used successfully by me, once. Then it turned out more people wanted to do this and asked me to share my code. So I made it _somewhat_ less terrible and here we go.
 
 Don't worry; it's still terrible. No warranty express or etc. Run it on a test blog installation first to make sure it doesn't explode. Then run it on your real blog once you know it's safe.
+
+
+FEATURES:
+
+Brings in posts, _and_ comments, _and_ maintains comment threads, _and_ commenter names IF AND ONLY IF the comments actually originated on Dreamwidth. (Livejournal-originated comment poster names are not preserved; I can't get to them either.)
+
+Preserves Current Music but _not_ Current mood.
+
+Preserves Dreamwidth tags, adding them as Wordpress tags. Posts without tags are tagged "no-tag."
+
+Imported posts can be automatically categorised either as "imported post" or "Uncategorised."
+
+Post formatting is preserved.
+
+Link to original post is preserved in new-post metadata
+
+
+ISSUES:
+
+oh god so many
+
+The Dreamwidth user tag is not well preserved. Neither is the Livejournal user tag, so LJ names may disappear from text.
+
+Current mood: is not preserved.
+
+You have to marshal a lot more resources depending upon how big your exported journal is. See below for details.
+
+Various friends groups are all condensed into a single "password protected" mode, due to reasons.
+
+It's not real fast.
+
 
 STUFF YOU NEED TO DO AND RESOURCES YOU NEED TO ALLOCATE:
 
@@ -39,6 +70,9 @@ THIRD -- Install the import tool. The default Wordpress install provides a Livej
 
 FOURTH -- Take the XML backup you made in Step 1 and place it into the same livejournal-importer directory. Name it "importme.xml" and give it the same permissions as the other files already in the directory.
 
-FIFTH - You're finally ready to run. Go to Tools/Import, select Livejournal. It'll bring up a Dreamwidth importer instead! Read the directions, provide a password for protected posts if you want to, and hit go.
+
+YOU'RE READY TO RUN!
+
+Congratulations(?), you're finally ready to run. Go to Tools/Import, select Livejournal. It'll bring up a Dreamwidth importer instead! Read the directions, provide a password for protected posts if you want to, and hit go.
 
 And then hopefully, you'll be done!

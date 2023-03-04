@@ -5,7 +5,7 @@ I did a lot of searching trying to figure out how to get my Dreamwidth blog entr
 
 Until now.
 
-It's not a good importer; I wrote it well enough to be used successfully by me, once. Then it turned out more people wanted to do this and asked me to share my code. So I made it _somewhat_ less terrible and here we go.
+It's not a good importer; I wrote it well enough to be used successfully by me, once. Then it turned out more people wanted to do this and asked me to share my code. So I made it _very slightly_ less terrible, fixed a few bugs, ripped out a bunch of unnecessary code, and here we go.
 
 Don't worry; it's still terrible. No warranty express or etc. Run it on a test blog installation first to make sure it doesn't explode. Then run it on your real blog once you know it's safe.
 
